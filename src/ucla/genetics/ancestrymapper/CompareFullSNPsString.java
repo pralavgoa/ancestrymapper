@@ -35,11 +35,11 @@ public class CompareFullSNPsString {
 				+ matrixWithAllPossibleMatchProbs.length()
 				+ " probabilities to file");
 
-		FileIO.writeStringToFile(GeneticAncestryEstimator.OUTPUT_FOLDER_PATH
+		FileIO.writeStringToFile(GeneticAncestryEstimator.COMMON_PATH
 				+ outputFileName + ".csv",
 				matrixWithAllPossibleMatchProbs.toString());
 
-		System.out.println(GeneticAncestryEstimator.OUTPUT_FOLDER_PATH
+		System.out.println(GeneticAncestryEstimator.COMMON_PATH
 				+ outputFileName + ".csv" + " is written successfully");
 	}
 }

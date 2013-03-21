@@ -1,9 +1,15 @@
 package ucla.genetics.pedigreegenerator;
 
-import java.util.ArrayList;
+import ucla.genetics.parsers.HapMap3DataParser;
 
 public class Population {
 
-	private ArrayList<Family> families;
+	public static final int NUM_PEOPLE = 10;
+
+	public Population(String folderWithFiles) {
+
+		HapMap3DataParser.reset(folderWithFiles);
+
+	}
 
 }
